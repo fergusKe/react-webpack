@@ -1,13 +1,3 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class App extends Component {
-	render() {
-		return (
-			<div>
-				This is app
-			</div>
-		);
-	}
-}
-
-export default App;
+export default () => <div>This is app</div>
