@@ -1,3 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react'
+import {
+  Link,
+} from 'react-router-dom'
+import Routes from '../config/router'
 
-export default () => <div>This is app</div>
+class App extends Component {
+  render() {
+    return [
+      <div>
+        <Link to="/">首頁</Link>
+        <br />
+        <Link to="/detail">詳細頁</Link>
+      </div>,
+      <Routes />,
+    ]
+  }
+}
+
+export default App;
