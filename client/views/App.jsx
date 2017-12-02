@@ -7,12 +7,12 @@ import Routes from '../config/router'
 class App extends Component {
   render() {
     return [
-      <div>
+      <div key="banner">
         <Link to="/">首頁</Link>
         <br />
         <Link to="/detail">詳細頁</Link>
       </div>,
-      <Routes />,
+      <Routes key="routes" />,
     ]
   }
 }
